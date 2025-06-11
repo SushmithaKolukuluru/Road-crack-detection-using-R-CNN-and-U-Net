@@ -1,2 +1,10 @@
 # Road-crack-detection-using-R-CNN-and-U-Net
-This project focuses on automated road crack detection using deep learning models, primarily U-Net for pixel-wise segmentation and R-CNN for region-based detection. 
+Road Crack Detection Using R-CNN and U-Net – Project Description (300 words)
+
+This project presents an automated system for detecting and segmenting road surface cracks using deep learning techniques, specifically R-CNN (Region-based Convolutional Neural Network) and U-Net architectures. Road cracks are a key indicator of infrastructure deterioration and, if left untreated, can lead to significant safety and economic issues. Traditional inspection methods are labor-intensive, time-consuming, and prone to human error. To overcome these challenges, this system aims to deliver a scalable, accurate, and automated crack detection solution.
+
+The project utilizes U-Net, a convolutional neural network originally designed for biomedical image segmentation, to achieve pixel-wise crack segmentation. Its encoder-decoder structure helps in capturing both spatial and contextual features, making it highly effective in detecting fine and irregular crack patterns under varying environmental conditions. R-CNN is used for region-based localization of cracks to complement the segmentation results and further enhance detection accuracy.
+
+The dataset includes annotated images of road surfaces with diverse lighting conditions, resolutions, and crack patterns. Data preprocessing techniques such as histogram equalization, image tiling, and noise reduction are applied to improve the robustness of the model. Post-processing steps include vectorization of crack masks for geometric analysis like crack width and length measurement.
+
+The trained model achieves an accuracy of 95%, F1 score of 0.63, and recall of 0.79, demonstrating its reliability in real-world scenarios. The system can distinguish cracks from similar visual noise like shadows or pipes and performs well on images from mobile mapping systems or drones. Future enhancements involve adopting advanced architectures like U-Net++, optimizing hyperparameters, increasing dataset diversity, and enabling real-time deployment on edge devices. This project lays a strong foundation for integrating AI into civil infrastructure monitoring and smart city applications.
